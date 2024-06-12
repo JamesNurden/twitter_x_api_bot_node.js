@@ -67,8 +67,8 @@ passport.use(
   new TwitterStrategy(
     {
       clientType: 'confidential', // Depends on your Twitter app settings (valid values: 'confidential' or 'public')
-      clientID: 'YOUR_TWITTER_CLIENT_ID',
-      clientSecret: 'YOUR_TWITTER_CLIENT_SECRET',
+      clientID: 'eXVlLWpmWWlJSlJ4SDU0WjF3Ukc6MTpjaQ',
+      clientSecret: '4XvaETW4Vq_vZh8j4A8v3ncLDDu-RNZoeOhhxcY4-eEVK0YiWK',
       callbackURL: 'http://127.0.0.1:5000/auth/twitter/callback', // Your callback URL
     },
     function (accessToken, refreshToken, profile, done) {
