@@ -1,0 +1,2051 @@
+[debug] [2024-06-08T23:16:21.144Z] ----------------------------------------------------------------------
+[debug] [2024-06-08T23:16:21.146Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2024-06-08T23:16:21.146Z] CLI Version:   13.11.2
+[debug] [2024-06-08T23:16:21.146Z] Platform:      win32
+[debug] [2024-06-08T23:16:21.147Z] Node Version:  v18.20.3
+[debug] [2024-06-08T23:16:21.147Z] Time:          Sun Jun 09 2024 00:16:21 GMT+0100 (British Summer Time)
+[debug] [2024-06-08T23:16:21.147Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-08T23:16:21.238Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-08T23:16:21.238Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-08T23:16:21.238Z] [iam] checking project kitsunekeltimi for permissions ["firebase.projects.get"]
+[debug] [2024-06-08T23:16:21.240Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-08T23:16:21.240Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-08T23:16:21.240Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-08T23:16:21.964Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-08T23:16:21.964Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-08T23:16:21.965Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi [none]
+[debug] [2024-06-08T23:16:22.301Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi 200
+[debug] [2024-06-08T23:16:22.301Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi {"projectId":"kitsunekeltimi","projectNumber":"864341143366","displayName":"KitsuneKeltimi","name":"projects/kitsunekeltimi","resources":{"hostingSite":"kitsunekeltimi"},"state":"ACTIVE","etag":"1_71f15a01-50f0-4bc2-8e6a-024cc44797c3"}
+[info] 
+[info] === Serving from 'C:\Users\James\kitsune'...
+[info] 
+[debug] [2024-06-08T23:16:22.349Z] defaultcredentials: writing to file C:\Users\James\AppData\Roaming\firebase\jnurdenlmu_gmail_com_application_default_credentials.json
+[debug] [2024-06-08T23:16:22.409Z] Setting GAC to C:\Users\James\AppData\Roaming\firebase\jnurdenlmu_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\James\\AppData\\Roaming\\firebase\\jnurdenlmu_gmail_com_application_default_credentials.json"}}
+[debug] [2024-06-08T23:16:22.411Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig [none]
+[debug] [2024-06-08T23:16:22.673Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig 200
+[debug] [2024-06-08T23:16:22.673Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig {"projectId":"kitsunekeltimi","storageBucket":"kitsunekeltimi.appspot.com"}
+[info] i  functions: Watching "C:\Users\James\kitsune\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\James\\kitsune\\functions\" for Cloud Functions..."}}
+[debug] [2024-06-08T23:16:22.692Z] Validating nodejs source
+[debug] [2024-06-08T23:16:23.815Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-08T23:16:23.816Z] Building nodejs source
+[debug] [2024-06-08T23:16:23.816Z] Failed to find version of module node: reached end of search path C:\Users\James\kitsune\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-06-08T23:16:23.818Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-06-08T23:16:23.823Z] Found firebase-functions binary at 'C:\Users\James\kitsune\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-06-08T23:16:33.894Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8772/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8772 {"message":"request to http://localhost:8772/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8772","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[info] Serving at port 8772
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[info] i  functions: Watching "C:\Users\James\kitsune\javascript" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\James\\kitsune\\javascript\" for Cloud Functions..."}}
+[debug] [2024-06-08T23:16:43.928Z] Validating nodejs source
+[debug] [2024-06-08T23:16:44.759Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-08T23:16:44.760Z] Building nodejs source
+[debug] [2024-06-08T23:16:44.760Z] Failed to find version of module node: reached end of search path C:\Users\James\kitsune\javascript\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-06-08T23:16:44.761Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-06-08T23:16:44.766Z] Found firebase-functions binary at 'C:\Users\James\kitsune\javascript\node_modules\.bin\firebase-functions'
+[info] Serving at port 8776
+
+[debug] [2024-06-08T23:16:47.842Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2024-06-08T23:30:41.649Z] ----------------------------------------------------------------------
+[debug] [2024-06-08T23:30:41.651Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-06-08T23:30:41.651Z] CLI Version:   13.11.2
+[debug] [2024-06-08T23:30:41.651Z] Platform:      win32
+[debug] [2024-06-08T23:30:41.651Z] Node Version:  v18.20.3
+[debug] [2024-06-08T23:30:41.652Z] Time:          Sun Jun 09 2024 00:30:41 GMT+0100 (British Summer Time)
+[debug] [2024-06-08T23:30:41.652Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-08T23:30:41.712Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-08T23:30:41.713Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-08T23:30:41.714Z] [iam] checking project kitsunekeltimi for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
+[debug] [2024-06-08T23:30:41.718Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-08T23:30:41.718Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-08T23:30:41.719Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-08T23:30:42.522Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-08T23:30:42.523Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-08T23:30:42.523Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-06-08T23:30:42.524Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-08T23:30:43.258Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-06-08T23:30:43.260Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'kitsunekeltimi'...
+[info] 
+[info] i  deploying firestore, functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[error] 
+[error] Error: functions predeploy error: Command terminated with non-zero exit code 1
+[debug] [2024-06-08T23:31:32.965Z] ----------------------------------------------------------------------
+[debug] [2024-06-08T23:31:32.966Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-06-08T23:31:32.966Z] CLI Version:   13.11.2
+[debug] [2024-06-08T23:31:32.967Z] Platform:      win32
+[debug] [2024-06-08T23:31:32.967Z] Node Version:  v18.20.3
+[debug] [2024-06-08T23:31:32.967Z] Time:          Sun Jun 09 2024 00:31:32 GMT+0100 (British Summer Time)
+[debug] [2024-06-08T23:31:32.968Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-08T23:31:33.025Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-08T23:31:33.027Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-08T23:31:33.028Z] [iam] checking project kitsunekeltimi for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
+[debug] [2024-06-08T23:31:33.030Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-08T23:31:33.031Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-08T23:31:33.032Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-08T23:31:33.821Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-08T23:31:33.822Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-08T23:31:33.823Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-06-08T23:31:33.824Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-08T23:31:34.500Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-06-08T23:31:34.501Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'kitsunekeltimi'...
+[info] 
+[info] i  deploying firestore, functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[error] 
+[error] Error: functions predeploy error: Command terminated with non-zero exit code 1
+[debug] [2024-06-08T23:32:49.549Z] ----------------------------------------------------------------------
+[debug] [2024-06-08T23:32:49.550Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-06-08T23:32:49.551Z] CLI Version:   13.11.2
+[debug] [2024-06-08T23:32:49.551Z] Platform:      win32
+[debug] [2024-06-08T23:32:49.551Z] Node Version:  v18.20.3
+[debug] [2024-06-08T23:32:49.552Z] Time:          Sun Jun 09 2024 00:32:49 GMT+0100 (British Summer Time)
+[debug] [2024-06-08T23:32:49.552Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-08T23:32:49.607Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-08T23:32:49.609Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-08T23:32:49.610Z] [iam] checking project kitsunekeltimi for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
+[debug] [2024-06-08T23:32:49.613Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-08T23:32:49.613Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-08T23:32:49.614Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-08T23:32:50.352Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-08T23:32:50.353Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-08T23:32:50.354Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-06-08T23:32:50.355Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-08T23:32:51.109Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-06-08T23:32:51.110Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'kitsunekeltimi'...
+[info] 
+[info] i  deploying firestore, functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[error] 
+[error] Error: functions predeploy error: Command terminated with non-zero exit code 1
+[debug] [2024-06-08T23:34:15.828Z] ----------------------------------------------------------------------
+[debug] [2024-06-08T23:34:15.829Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-06-08T23:34:15.829Z] CLI Version:   13.11.2
+[debug] [2024-06-08T23:34:15.830Z] Platform:      win32
+[debug] [2024-06-08T23:34:15.830Z] Node Version:  v18.20.3
+[debug] [2024-06-08T23:34:15.830Z] Time:          Sun Jun 09 2024 00:34:15 GMT+0100 (British Summer Time)
+[debug] [2024-06-08T23:34:15.830Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-08T23:34:15.892Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-08T23:34:15.894Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-08T23:34:15.895Z] [iam] checking project kitsunekeltimi for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
+[debug] [2024-06-08T23:34:15.897Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-08T23:34:15.897Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-08T23:34:15.898Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-08T23:34:16.650Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-08T23:34:16.650Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-08T23:34:16.651Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-06-08T23:34:16.652Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-08T23:34:17.323Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-06-08T23:34:17.324Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'kitsunekeltimi'...
+[info] 
+[info] i  deploying firestore, functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[error] 
+[error] Error: functions predeploy error: Command terminated with non-zero exit code 1
+[debug] [2024-06-08T23:35:41.379Z] ----------------------------------------------------------------------
+[debug] [2024-06-08T23:35:41.380Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-06-08T23:35:41.380Z] CLI Version:   13.11.2
+[debug] [2024-06-08T23:35:41.381Z] Platform:      win32
+[debug] [2024-06-08T23:35:41.381Z] Node Version:  v18.20.3
+[debug] [2024-06-08T23:35:41.382Z] Time:          Sun Jun 09 2024 00:35:41 GMT+0100 (British Summer Time)
+[debug] [2024-06-08T23:35:41.382Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-08T23:35:41.438Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-08T23:35:41.439Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-08T23:35:41.440Z] [iam] checking project kitsunekeltimi for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
+[debug] [2024-06-08T23:35:41.442Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-08T23:35:41.443Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-08T23:35:41.444Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-08T23:35:42.218Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-08T23:35:42.219Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-08T23:35:42.220Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-06-08T23:35:42.220Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-08T23:35:42.963Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-06-08T23:35:42.963Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'kitsunekeltimi'...
+[info] 
+[info] i  deploying firestore, functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[error] 
+[error] Error: functions predeploy error: Command terminated with non-zero exit code 1
+[debug] [2024-06-08T23:48:15.369Z] ----------------------------------------------------------------------
+[debug] [2024-06-08T23:48:15.370Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-06-08T23:48:15.371Z] CLI Version:   13.11.2
+[debug] [2024-06-08T23:48:15.371Z] Platform:      win32
+[debug] [2024-06-08T23:48:15.371Z] Node Version:  v18.20.3
+[debug] [2024-06-08T23:48:15.372Z] Time:          Sun Jun 09 2024 00:48:15 GMT+0100 (British Summer Time)
+[debug] [2024-06-08T23:48:15.372Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-08T23:48:15.429Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-08T23:48:15.431Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-08T23:48:15.431Z] [iam] checking project kitsunekeltimi for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
+[debug] [2024-06-08T23:48:15.434Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-08T23:48:15.434Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-08T23:48:15.435Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-08T23:48:16.198Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-08T23:48:16.199Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-08T23:48:16.200Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-06-08T23:48:16.201Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-08T23:48:16.997Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-06-08T23:48:16.998Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'kitsunekeltimi'...
+[info] 
+[info] i  deploying firestore, functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[error] 
+[error] Error: functions predeploy error: Command terminated with non-zero exit code 1
+[debug] [2024-06-08T23:55:38.699Z] ----------------------------------------------------------------------
+[debug] [2024-06-08T23:55:38.700Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-06-08T23:55:38.700Z] CLI Version:   13.11.2
+[debug] [2024-06-08T23:55:38.701Z] Platform:      win32
+[debug] [2024-06-08T23:55:38.701Z] Node Version:  v18.20.3
+[debug] [2024-06-08T23:55:38.702Z] Time:          Sun Jun 09 2024 00:55:38 GMT+0100 (British Summer Time)
+[debug] [2024-06-08T23:55:38.702Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-08T23:55:38.757Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-08T23:55:38.759Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-08T23:55:38.759Z] [iam] checking project kitsunekeltimi for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
+[debug] [2024-06-08T23:55:38.762Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-08T23:55:38.762Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-08T23:55:38.763Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-08T23:55:39.529Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-08T23:55:39.530Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-08T23:55:39.531Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-06-08T23:55:39.531Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-08T23:55:39.908Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-06-08T23:55:39.910Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'kitsunekeltimi'...
+[info] 
+[info] i  deploying firestore, functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[error] 
+[error] Error: functions predeploy error: Command terminated with non-zero exit code 1
+[debug] [2024-06-09T00:04:43.610Z] ----------------------------------------------------------------------
+[debug] [2024-06-09T00:04:43.611Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-06-09T00:04:43.612Z] CLI Version:   13.11.2
+[debug] [2024-06-09T00:04:43.612Z] Platform:      win32
+[debug] [2024-06-09T00:04:43.612Z] Node Version:  v18.20.3
+[debug] [2024-06-09T00:04:43.613Z] Time:          Sun Jun 09 2024 01:04:43 GMT+0100 (British Summer Time)
+[debug] [2024-06-09T00:04:43.613Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-09T00:04:43.670Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-09T00:04:43.672Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-09T00:04:43.673Z] [iam] checking project kitsunekeltimi for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
+[debug] [2024-06-09T00:04:43.675Z] > refreshing access token with scopes: []
+[debug] [2024-06-09T00:04:43.677Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-06-09T00:04:43.677Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-09T00:04:43.908Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-06-09T00:04:43.909Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-09T00:04:43.928Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-09T00:04:43.928Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:04:43.929Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T00:04:44.670Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-09T00:04:44.671Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T00:04:44.671Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-06-09T00:04:44.672Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-09T00:04:45.477Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-06-09T00:04:45.478Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'kitsunekeltimi'...
+[info] 
+[info] i  deploying firestore, functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[error] 
+[error] Error: functions predeploy error: Command terminated with non-zero exit code 1
+[debug] [2024-06-09T00:07:18.038Z] ----------------------------------------------------------------------
+[debug] [2024-06-09T00:07:18.039Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-06-09T00:07:18.040Z] CLI Version:   13.11.2
+[debug] [2024-06-09T00:07:18.040Z] Platform:      win32
+[debug] [2024-06-09T00:07:18.040Z] Node Version:  v18.20.3
+[debug] [2024-06-09T00:07:18.041Z] Time:          Sun Jun 09 2024 01:07:18 GMT+0100 (British Summer Time)
+[debug] [2024-06-09T00:07:18.041Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-09T00:07:18.104Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-09T00:07:18.105Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-09T00:07:18.106Z] [iam] checking project kitsunekeltimi for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
+[debug] [2024-06-09T00:07:18.108Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-09T00:07:18.109Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:07:18.109Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T00:07:18.431Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-09T00:07:18.431Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T00:07:18.432Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-06-09T00:07:18.433Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-09T00:07:19.196Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-06-09T00:07:19.197Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'kitsunekeltimi'...
+[info] 
+[info] i  deploying firestore, functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[error] 
+[error] Error: functions predeploy error: Command terminated with non-zero exit code 1
+[debug] [2024-06-09T00:38:27.894Z] ----------------------------------------------------------------------
+[debug] [2024-06-09T00:38:27.896Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-06-09T00:38:27.896Z] CLI Version:   13.11.2
+[debug] [2024-06-09T00:38:27.896Z] Platform:      win32
+[debug] [2024-06-09T00:38:27.896Z] Node Version:  v18.20.3
+[debug] [2024-06-09T00:38:27.897Z] Time:          Sun Jun 09 2024 01:38:27 GMT+0100 (British Summer Time)
+[debug] [2024-06-09T00:38:27.897Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-09T00:38:27.953Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-09T00:38:27.955Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-09T00:38:27.956Z] [iam] checking project kitsunekeltimi for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
+[debug] [2024-06-09T00:38:27.958Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-09T00:38:27.958Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:38:27.959Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T00:38:28.775Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-09T00:38:28.776Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T00:38:28.777Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-06-09T00:38:28.778Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-09T00:38:29.045Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-06-09T00:38:29.046Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'kitsunekeltimi'...
+[info] 
+[info] i  deploying firestore, functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[error] 
+[error] Error: functions predeploy error: Command terminated with non-zero exit code 1
+[debug] [2024-06-09T00:40:55.608Z] ----------------------------------------------------------------------
+[debug] [2024-06-09T00:40:55.610Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-06-09T00:40:55.610Z] CLI Version:   13.11.2
+[debug] [2024-06-09T00:40:55.610Z] Platform:      win32
+[debug] [2024-06-09T00:40:55.610Z] Node Version:  v18.20.3
+[debug] [2024-06-09T00:40:55.611Z] Time:          Sun Jun 09 2024 01:40:55 GMT+0100 (British Summer Time)
+[debug] [2024-06-09T00:40:55.611Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-09T00:40:55.667Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-09T00:40:55.669Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-09T00:40:55.670Z] [iam] checking project kitsunekeltimi for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
+[debug] [2024-06-09T00:40:55.672Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-09T00:40:55.673Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:40:55.674Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T00:40:56.426Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-09T00:40:56.426Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T00:40:56.427Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-06-09T00:40:56.428Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-09T00:40:57.124Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-06-09T00:40:57.125Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'kitsunekeltimi'...
+[info] 
+[info] i  deploying firestore, functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2024-06-09T00:40:58.908Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test [none]
+[debug] [2024-06-09T00:40:58.909Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test [omitted]
+[debug] [2024-06-09T00:40:59.720Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test 200
+[debug] [2024-06-09T00:40:59.720Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test {}
+[info] +  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2024-06-09T00:40:59.723Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi [none]
+[debug] [2024-06-09T00:41:00.093Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi 200
+[debug] [2024-06-09T00:41:00.093Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi {"projectId":"kitsunekeltimi","projectNumber":"864341143366","displayName":"KitsuneKeltimi","name":"projects/kitsunekeltimi","resources":{"hostingSite":"kitsunekeltimi"},"state":"ACTIVE","etag":"1_71f15a01-50f0-4bc2-8e6a-024cc44797c3"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: preparing codebase javascript for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2024-06-09T00:41:00.097Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-06-09T00:41:00.097Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:41:00.098Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-06-09T00:41:00.098Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:41:00.099Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com [none]
+[debug] [2024-06-09T00:41:00.100Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:41:00.101Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com [none]
+[debug] [2024-06-09T00:41:00.101Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:41:01.052Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com 200
+[debug] [2024-06-09T00:41:01.052Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com [omitted]
+[warn] !  functions: missing required API cloudbuild.googleapis.com. Enabling now... 
+[debug] [2024-06-09T00:41:01.054Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com:enable [none]
+[debug] [2024-06-09T00:41:01.054Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com:enable x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:41:01.058Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com 200
+[debug] [2024-06-09T00:41:01.058Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-06-09T00:41:01.061Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com 200
+[debug] [2024-06-09T00:41:01.061Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com [omitted]
+[warn] !  artifactregistry: missing required API artifactregistry.googleapis.com. Enabling now... 
+[debug] [2024-06-09T00:41:01.062Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com:enable [none]
+[debug] [2024-06-09T00:41:01.063Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com:enable x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:41:01.067Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com 200
+[debug] [2024-06-09T00:41:01.068Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2024-06-09T00:41:02.312Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com:enable 200
+[debug] [2024-06-09T00:41:02.313Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com:enable [omitted]
+[debug] [2024-06-09T00:41:02.633Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com:enable 200
+[debug] [2024-06-09T00:41:02.634Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com:enable [omitted]
+[debug] [2024-06-09T00:41:12.327Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com [none]
+[debug] [2024-06-09T00:41:12.328Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:41:12.640Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com [none]
+[debug] [2024-06-09T00:41:12.640Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:41:13.388Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com 200
+[debug] [2024-06-09T00:41:13.388Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2024-06-09T00:41:13.554Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com 200
+[debug] [2024-06-09T00:41:13.555Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2024-06-09T00:41:13.560Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig [none]
+[debug] [2024-06-09T00:41:13.867Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig 200
+[debug] [2024-06-09T00:41:13.868Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig {"projectId":"kitsunekeltimi","storageBucket":"kitsunekeltimi.appspot.com"}
+[debug] [2024-06-09T00:41:13.870Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs [none]
+[debug] [2024-06-09T00:41:14.230Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs 200
+[debug] [2024-06-09T00:41:14.230Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs {}
+[debug] [2024-06-09T00:41:14.232Z] Validating nodejs source
+[debug] [2024-06-09T00:41:15.106Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-09T00:41:15.109Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2024-06-09T00:41:15.111Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-06-09T00:41:15.116Z] Found firebase-functions binary at 'C:\Users\James\kitsune\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8022
+
+[error] Error: The default Firebase app already exists. This means you called initializeApp() more than once without providing an app name as the second argument. In most cases you only need to call initializeApp() once. But if you do want to initialize multiple apps, pass a second argument to initializeApp() to give each app a unique name.
+    at AppStore.initializeApp (C:\Users\James\kitsune\functions\node_modules\firebase-admin\lib\app\lifecycle.js:41:23)
+    at initializeApp (C:\Users\James\kitsune\functions\node_modules\firebase-admin\lib\app\lifecycle.js:102:36)
+    at Object.<anonymous> (C:\Users\James\kitsune\functions\index.js:13:1)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at loadModule (C:\Users\James\kitsune\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+
+[debug] [2024-06-09T00:41:18.483Z] Got response code 400; body Failed to generate manifest from function source: Error: The default Firebase app already exists. This means you called initializeApp() more than once without providing an app name as the second argument. In most cases you only need to call initializeApp() once. But if you do want to initialize multiple apps, pass a second argument to initializeApp() to give each app a unique name.
+[error] 
+[error] Error: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error
+[debug] [2024-06-09T00:42:55.888Z] ----------------------------------------------------------------------
+[debug] [2024-06-09T00:42:55.890Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-06-09T00:42:55.890Z] CLI Version:   13.11.2
+[debug] [2024-06-09T00:42:55.890Z] Platform:      win32
+[debug] [2024-06-09T00:42:55.891Z] Node Version:  v18.20.3
+[debug] [2024-06-09T00:42:55.891Z] Time:          Sun Jun 09 2024 01:42:55 GMT+0100 (British Summer Time)
+[debug] [2024-06-09T00:42:55.891Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-09T00:42:55.947Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-09T00:42:55.949Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-09T00:42:55.949Z] [iam] checking project kitsunekeltimi for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
+[debug] [2024-06-09T00:42:55.951Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-09T00:42:55.952Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:42:55.957Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T00:42:56.695Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-09T00:42:56.695Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T00:42:56.696Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-06-09T00:42:56.697Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-09T00:42:57.365Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-06-09T00:42:57.365Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'kitsunekeltimi'...
+[info] 
+[info] i  deploying firestore, functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[error] 
+[error] Error: functions predeploy error: Command terminated with non-zero exit code 1
+[debug] [2024-06-09T00:44:44.554Z] ----------------------------------------------------------------------
+[debug] [2024-06-09T00:44:44.556Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-06-09T00:44:44.556Z] CLI Version:   13.11.2
+[debug] [2024-06-09T00:44:44.556Z] Platform:      win32
+[debug] [2024-06-09T00:44:44.557Z] Node Version:  v18.20.3
+[debug] [2024-06-09T00:44:44.557Z] Time:          Sun Jun 09 2024 01:44:44 GMT+0100 (British Summer Time)
+[debug] [2024-06-09T00:44:44.558Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-09T00:44:44.620Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-09T00:44:44.622Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-09T00:44:44.622Z] [iam] checking project kitsunekeltimi for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
+[debug] [2024-06-09T00:44:44.625Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-09T00:44:44.625Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:44:44.626Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T00:44:45.405Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-09T00:44:45.406Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T00:44:45.407Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-06-09T00:44:45.407Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-09T00:44:46.144Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-06-09T00:44:46.145Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'kitsunekeltimi'...
+[info] 
+[info] i  deploying firestore, functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2024-06-09T00:44:48.077Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test [none]
+[debug] [2024-06-09T00:44:48.078Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test [omitted]
+[debug] [2024-06-09T00:44:48.843Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test 200
+[debug] [2024-06-09T00:44:48.844Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test {}
+[info] +  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2024-06-09T00:44:48.848Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi [none]
+[debug] [2024-06-09T00:44:49.177Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi 200
+[debug] [2024-06-09T00:44:49.177Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi {"projectId":"kitsunekeltimi","projectNumber":"864341143366","displayName":"KitsuneKeltimi","name":"projects/kitsunekeltimi","resources":{"hostingSite":"kitsunekeltimi"},"state":"ACTIVE","etag":"1_71f15a01-50f0-4bc2-8e6a-024cc44797c3"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: preparing codebase javascript for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2024-06-09T00:44:49.179Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-06-09T00:44:49.180Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:44:49.181Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-06-09T00:44:49.181Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:44:49.182Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com [none]
+[debug] [2024-06-09T00:44:49.182Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:44:49.183Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com [none]
+[debug] [2024-06-09T00:44:49.184Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:44:50.122Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com 200
+[debug] [2024-06-09T00:44:50.123Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-06-09T00:44:50.143Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com 200
+[debug] [2024-06-09T00:44:50.144Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2024-06-09T00:44:50.146Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com 200
+[debug] [2024-06-09T00:44:50.146Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2024-06-09T00:44:50.328Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com 200
+[debug] [2024-06-09T00:44:50.328Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2024-06-09T00:44:50.329Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig [none]
+[debug] [2024-06-09T00:44:50.631Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig 200
+[debug] [2024-06-09T00:44:50.632Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig {"projectId":"kitsunekeltimi","storageBucket":"kitsunekeltimi.appspot.com"}
+[debug] [2024-06-09T00:44:50.634Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs [none]
+[debug] [2024-06-09T00:44:50.896Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs 200
+[debug] [2024-06-09T00:44:50.897Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs {}
+[debug] [2024-06-09T00:44:50.898Z] Validating nodejs source
+[debug] [2024-06-09T00:44:51.767Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-09T00:44:51.770Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2024-06-09T00:44:51.771Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-06-09T00:44:51.777Z] Found firebase-functions binary at 'C:\Users\James\kitsune\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8905
+
+[error] Error: Cannot find module 'twitter-api-v2'
+Require stack:
+- C:\Users\James\kitsune\functions\index.js
+- C:\Users\James\kitsune\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\James\kitsune\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (C:\Users\James\kitsune\functions\index.js:37:20)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+
+[debug] [2024-06-09T00:44:52.188Z] Got response code 400; body Failed to generate manifest from function source: Error: Cannot find module 'twitter-api-v2'
+Require stack:
+- C:\Users\James\kitsune\functions\index.js
+- C:\Users\James\kitsune\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\James\kitsune\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js
+[error] 
+[error] Error: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error
+[debug] [2024-06-09T00:48:11.854Z] ----------------------------------------------------------------------
+[debug] [2024-06-09T00:48:11.856Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-06-09T00:48:11.856Z] CLI Version:   13.11.2
+[debug] [2024-06-09T00:48:11.856Z] Platform:      win32
+[debug] [2024-06-09T00:48:11.856Z] Node Version:  v18.20.3
+[debug] [2024-06-09T00:48:11.857Z] Time:          Sun Jun 09 2024 01:48:11 GMT+0100 (British Summer Time)
+[debug] [2024-06-09T00:48:11.857Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-09T00:48:11.915Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-09T00:48:11.917Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-09T00:48:11.918Z] [iam] checking project kitsunekeltimi for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
+[debug] [2024-06-09T00:48:11.920Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-09T00:48:11.921Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:48:11.921Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T00:48:12.688Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-09T00:48:12.689Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T00:48:12.690Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-06-09T00:48:12.690Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-09T00:48:13.380Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-06-09T00:48:13.381Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'kitsunekeltimi'...
+[info] 
+[info] i  deploying firestore, functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2024-06-09T00:48:15.348Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test [none]
+[debug] [2024-06-09T00:48:15.349Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test [omitted]
+[debug] [2024-06-09T00:48:16.140Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test 200
+[debug] [2024-06-09T00:48:16.140Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test {}
+[info] +  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2024-06-09T00:48:16.142Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi [none]
+[debug] [2024-06-09T00:48:16.498Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi 200
+[debug] [2024-06-09T00:48:16.499Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi {"projectId":"kitsunekeltimi","projectNumber":"864341143366","displayName":"KitsuneKeltimi","name":"projects/kitsunekeltimi","resources":{"hostingSite":"kitsunekeltimi"},"state":"ACTIVE","etag":"1_71f15a01-50f0-4bc2-8e6a-024cc44797c3"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: preparing codebase javascript for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2024-06-09T00:48:16.504Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-06-09T00:48:16.504Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:48:16.506Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-06-09T00:48:16.506Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:48:16.508Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com [none]
+[debug] [2024-06-09T00:48:16.508Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:48:16.510Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com [none]
+[debug] [2024-06-09T00:48:16.510Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T00:48:17.449Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com 200
+[debug] [2024-06-09T00:48:17.450Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2024-06-09T00:48:17.469Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com 200
+[debug] [2024-06-09T00:48:17.470Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2024-06-09T00:48:17.472Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com 200
+[debug] [2024-06-09T00:48:17.473Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-06-09T00:48:17.512Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com 200
+[debug] [2024-06-09T00:48:17.512Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2024-06-09T00:48:17.513Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig [none]
+[debug] [2024-06-09T00:48:17.808Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig 200
+[debug] [2024-06-09T00:48:17.808Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig {"projectId":"kitsunekeltimi","storageBucket":"kitsunekeltimi.appspot.com"}
+[debug] [2024-06-09T00:48:17.810Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs [none]
+[debug] [2024-06-09T00:48:18.145Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs 200
+[debug] [2024-06-09T00:48:18.146Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs {}
+[debug] [2024-06-09T00:48:18.150Z] Validating nodejs source
+[debug] [2024-06-09T00:48:19.029Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "chatgpt": "^5.2.5",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.1",
+    "openai": "^4.49.1",
+    "twitter-api-v2": "^1.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-09T00:48:19.032Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2024-06-09T00:48:19.034Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-06-09T00:48:19.041Z] Found firebase-functions binary at 'C:\Users\James\kitsune\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8444
+
+[error] TypeError: Configuration is not a constructor
+    at Object.<anonymous> (C:\Users\James\kitsune\functions\index.js:47:23)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at loadModule (C:\Users\James\kitsune\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\James\kitsune\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+    at C:\Users\James\kitsune\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js:56:56
+
+[debug] [2024-06-09T00:48:21.278Z] Got response code 400; body Failed to generate manifest from function source: TypeError: Configuration is not a constructor
+[error] 
+[error] Error: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error
+[debug] [2024-06-09T01:11:08.684Z] ----------------------------------------------------------------------
+[debug] [2024-06-09T01:11:08.686Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-06-09T01:11:08.686Z] CLI Version:   13.11.2
+[debug] [2024-06-09T01:11:08.686Z] Platform:      win32
+[debug] [2024-06-09T01:11:08.687Z] Node Version:  v18.20.3
+[debug] [2024-06-09T01:11:08.687Z] Time:          Sun Jun 09 2024 02:11:08 GMT+0100 (British Summer Time)
+[debug] [2024-06-09T01:11:08.687Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-09T01:11:08.744Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-09T01:11:08.745Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-09T01:11:08.746Z] [iam] checking project kitsunekeltimi for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
+[debug] [2024-06-09T01:11:08.748Z] > refreshing access token with scopes: []
+[debug] [2024-06-09T01:11:08.751Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-06-09T01:11:08.751Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-09T01:11:08.996Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-06-09T01:11:08.997Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-09T01:11:09.015Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-09T01:11:09.016Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:11:09.017Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T01:11:09.747Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-09T01:11:09.748Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T01:11:09.749Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-06-09T01:11:09.750Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-09T01:11:10.463Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-06-09T01:11:10.463Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'kitsunekeltimi'...
+[info] 
+[info] i  deploying firestore, functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2024-06-09T01:11:12.308Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test [none]
+[debug] [2024-06-09T01:11:12.309Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test [omitted]
+[debug] [2024-06-09T01:11:13.113Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test 200
+[debug] [2024-06-09T01:11:13.114Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test {}
+[info] +  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2024-06-09T01:11:13.116Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi [none]
+[debug] [2024-06-09T01:11:13.448Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi 200
+[debug] [2024-06-09T01:11:13.448Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi {"projectId":"kitsunekeltimi","projectNumber":"864341143366","displayName":"KitsuneKeltimi","name":"projects/kitsunekeltimi","resources":{"hostingSite":"kitsunekeltimi"},"state":"ACTIVE","etag":"1_71f15a01-50f0-4bc2-8e6a-024cc44797c3"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: preparing codebase javascript for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2024-06-09T01:11:13.450Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-06-09T01:11:13.450Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:11:13.451Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-06-09T01:11:13.451Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:11:13.452Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com [none]
+[debug] [2024-06-09T01:11:13.453Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:11:13.454Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com [none]
+[debug] [2024-06-09T01:11:13.454Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:11:14.389Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com 200
+[debug] [2024-06-09T01:11:14.389Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2024-06-09T01:11:14.391Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com 200
+[debug] [2024-06-09T01:11:14.391Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-06-09T01:11:14.419Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com 200
+[debug] [2024-06-09T01:11:14.419Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2024-06-09T01:11:14.480Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com 200
+[debug] [2024-06-09T01:11:14.481Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2024-06-09T01:11:14.482Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig [none]
+[debug] [2024-06-09T01:11:14.782Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig 200
+[debug] [2024-06-09T01:11:14.783Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig {"projectId":"kitsunekeltimi","storageBucket":"kitsunekeltimi.appspot.com"}
+[debug] [2024-06-09T01:11:14.783Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs [none]
+[debug] [2024-06-09T01:11:15.111Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs 200
+[debug] [2024-06-09T01:11:15.112Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs {}
+[debug] [2024-06-09T01:11:15.116Z] Validating nodejs source
+[debug] [2024-06-09T01:11:16.005Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "chatgpt": "^5.2.5",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.1",
+    "openai": "^4.49.1",
+    "twitter-api-v2": "^1.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-09T01:11:16.008Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2024-06-09T01:11:16.014Z] Found functions.yaml. Got spec: # functions.yaml
+
+# Define your Cloud Functions
+functions:
+  auth:
+    handler: auth
+    memory: 256MB
+    timeout: 10s
+
+  callback:
+    handler: callback
+    memory: 256MB
+    timeout: 10s
+
+  tweet:
+    handler: tweet
+    memory: 256MB
+    timeout: 10s
+
+# Explanation: We define three Cloud Functions: auth, callback, and tweet.
+# Each function specifies its handler (corresponding to the function name)
+# Adjust the memory and timeout values as needed for your specific use case.
+# You can add more functions or additional configuration options as required.
+
+[error] Error: Failed to parse build specification:
+[error] - FirebaseError Expect manifest yaml to specify a version number
+[debug] [2024-06-09T01:15:03.273Z] ----------------------------------------------------------------------
+[debug] [2024-06-09T01:15:03.274Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-06-09T01:15:03.275Z] CLI Version:   13.11.2
+[debug] [2024-06-09T01:15:03.275Z] Platform:      win32
+[debug] [2024-06-09T01:15:03.275Z] Node Version:  v18.20.3
+[debug] [2024-06-09T01:15:03.276Z] Time:          Sun Jun 09 2024 02:15:03 GMT+0100 (British Summer Time)
+[debug] [2024-06-09T01:15:03.276Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-09T01:15:03.332Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-09T01:15:03.334Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-09T01:15:03.334Z] [iam] checking project kitsunekeltimi for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
+[debug] [2024-06-09T01:15:03.336Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-09T01:15:03.336Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:15:03.337Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T01:15:04.115Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-09T01:15:04.116Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T01:15:04.116Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-06-09T01:15:04.117Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-09T01:15:04.791Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-06-09T01:15:04.792Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'kitsunekeltimi'...
+[info] 
+[info] i  deploying firestore, functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2024-06-09T01:15:06.534Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test [none]
+[debug] [2024-06-09T01:15:06.534Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test [omitted]
+[debug] [2024-06-09T01:15:07.312Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test 200
+[debug] [2024-06-09T01:15:07.313Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test {}
+[info] +  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2024-06-09T01:15:07.318Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi [none]
+[debug] [2024-06-09T01:15:07.649Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi 200
+[debug] [2024-06-09T01:15:07.649Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi {"projectId":"kitsunekeltimi","projectNumber":"864341143366","displayName":"KitsuneKeltimi","name":"projects/kitsunekeltimi","resources":{"hostingSite":"kitsunekeltimi"},"state":"ACTIVE","etag":"1_71f15a01-50f0-4bc2-8e6a-024cc44797c3"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: preparing codebase javascript for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2024-06-09T01:15:07.652Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-06-09T01:15:07.653Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:15:07.654Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-06-09T01:15:07.654Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:15:07.655Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com [none]
+[debug] [2024-06-09T01:15:07.655Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:15:07.657Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com [none]
+[debug] [2024-06-09T01:15:07.657Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:15:08.570Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com 200
+[debug] [2024-06-09T01:15:08.570Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2024-06-09T01:15:08.571Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com 200
+[debug] [2024-06-09T01:15:08.572Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-06-09T01:15:08.583Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com 200
+[debug] [2024-06-09T01:15:08.583Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2024-06-09T01:15:08.595Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com 200
+[debug] [2024-06-09T01:15:08.596Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2024-06-09T01:15:08.596Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig [none]
+[debug] [2024-06-09T01:15:08.908Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig 200
+[debug] [2024-06-09T01:15:08.909Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig {"projectId":"kitsunekeltimi","storageBucket":"kitsunekeltimi.appspot.com"}
+[debug] [2024-06-09T01:15:08.911Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs [none]
+[debug] [2024-06-09T01:15:09.731Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs 200
+[debug] [2024-06-09T01:15:09.732Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs {}
+[debug] [2024-06-09T01:15:09.734Z] Validating nodejs source
+[debug] [2024-06-09T01:15:10.564Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "chatgpt": "^5.2.5",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.1",
+    "openai": "^4.49.1",
+    "twitter-api-v2": "^1.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-09T01:15:10.566Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2024-06-09T01:15:10.573Z] Found functions.yaml. Got spec: # functions.yaml
+
+# Specify the version (e.g., 2)
+version: 2
+
+# Define your Cloud Functions
+functions:
+  auth:
+    handler: auth
+    memory: 256MB
+    timeout: 10s
+
+  callback:
+    handler: callback
+    memory: 256MB
+    timeout: 10s
+
+  tweet:
+    handler: tweet
+    memory: 256MB
+    timeout: 10s
+
+# Explanation: We define three Cloud Functions: auth, callback, and tweet.
+# Each function specifies its handler (corresponding to the function name)
+# Adjust the memory and timeout values as needed for your specific use case.
+# You can add more functions or additional configuration options as required.
+
+[error] Error: Failed to parse build specification:
+[error] - FirebaseError Expect manifest yaml to specify a version number
+[debug] [2024-06-09T01:16:15.085Z] ----------------------------------------------------------------------
+[debug] [2024-06-09T01:16:15.087Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-06-09T01:16:15.087Z] CLI Version:   13.11.2
+[debug] [2024-06-09T01:16:15.087Z] Platform:      win32
+[debug] [2024-06-09T01:16:15.088Z] Node Version:  v18.20.3
+[debug] [2024-06-09T01:16:15.088Z] Time:          Sun Jun 09 2024 02:16:15 GMT+0100 (British Summer Time)
+[debug] [2024-06-09T01:16:15.088Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-09T01:16:15.145Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-09T01:16:15.147Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-09T01:16:15.148Z] [iam] checking project kitsunekeltimi for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
+[debug] [2024-06-09T01:16:15.150Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-09T01:16:15.151Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:16:15.152Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T01:16:15.591Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-09T01:16:15.591Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T01:16:15.592Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-06-09T01:16:15.593Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-09T01:16:16.307Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-06-09T01:16:16.308Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'kitsunekeltimi'...
+[info] 
+[info] i  deploying firestore, functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2024-06-09T01:16:18.023Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test [none]
+[debug] [2024-06-09T01:16:18.023Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test [omitted]
+[debug] [2024-06-09T01:16:18.833Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test 200
+[debug] [2024-06-09T01:16:18.834Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test {}
+[info] +  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2024-06-09T01:16:18.838Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi [none]
+[debug] [2024-06-09T01:16:19.151Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi 200
+[debug] [2024-06-09T01:16:19.152Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi {"projectId":"kitsunekeltimi","projectNumber":"864341143366","displayName":"KitsuneKeltimi","name":"projects/kitsunekeltimi","resources":{"hostingSite":"kitsunekeltimi"},"state":"ACTIVE","etag":"1_71f15a01-50f0-4bc2-8e6a-024cc44797c3"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: preparing codebase javascript for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2024-06-09T01:16:19.160Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-06-09T01:16:19.160Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:16:19.162Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-06-09T01:16:19.162Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:16:19.163Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com [none]
+[debug] [2024-06-09T01:16:19.164Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:16:19.165Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com [none]
+[debug] [2024-06-09T01:16:19.166Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:16:20.073Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com 200
+[debug] [2024-06-09T01:16:20.073Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2024-06-09T01:16:20.138Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com 200
+[debug] [2024-06-09T01:16:20.138Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2024-06-09T01:16:20.140Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com 200
+[debug] [2024-06-09T01:16:20.141Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2024-06-09T01:16:20.161Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com 200
+[debug] [2024-06-09T01:16:20.162Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-06-09T01:16:20.162Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig [none]
+[debug] [2024-06-09T01:16:20.431Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig 200
+[debug] [2024-06-09T01:16:20.432Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig {"projectId":"kitsunekeltimi","storageBucket":"kitsunekeltimi.appspot.com"}
+[debug] [2024-06-09T01:16:20.433Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs [none]
+[debug] [2024-06-09T01:16:20.752Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs 200
+[debug] [2024-06-09T01:16:20.753Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs {}
+[debug] [2024-06-09T01:16:20.756Z] Validating nodejs source
+[debug] [2024-06-09T01:16:21.622Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "chatgpt": "^5.2.5",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.1",
+    "openai": "^4.49.1",
+    "twitter-api-v2": "^1.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-09T01:16:21.625Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2024-06-09T01:16:21.632Z] Found functions.yaml. Got spec: # functions.yaml
+
+# Specify the version (e.g., 2)
+version 2: version 2
+
+# Define your Cloud Functions
+functions:
+  auth:
+    handler: auth
+    memory: 256MB
+    timeout: 10s
+
+  callback:
+    handler: callback
+    memory: 256MB
+    timeout: 10s
+
+  tweet:
+    handler: tweet
+    memory: 256MB
+    timeout: 10s
+
+# Explanation: We define three Cloud Functions: auth, callback, and tweet.
+# Each function specifies its handler (corresponding to the function name)
+# Adjust the memory and timeout values as needed for your specific use case.
+# You can add more functions or additional configuration options as required.
+
+[error] Error: Failed to parse build specification:
+[error] - FirebaseError Expect manifest yaml to specify a version number
+[debug] [2024-06-09T01:17:00.217Z] ----------------------------------------------------------------------
+[debug] [2024-06-09T01:17:00.219Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-06-09T01:17:00.219Z] CLI Version:   13.11.2
+[debug] [2024-06-09T01:17:00.219Z] Platform:      win32
+[debug] [2024-06-09T01:17:00.219Z] Node Version:  v18.20.3
+[debug] [2024-06-09T01:17:00.220Z] Time:          Sun Jun 09 2024 02:17:00 GMT+0100 (British Summer Time)
+[debug] [2024-06-09T01:17:00.220Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-09T01:17:00.276Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-09T01:17:00.278Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-09T01:17:00.279Z] [iam] checking project kitsunekeltimi for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
+[debug] [2024-06-09T01:17:00.281Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-09T01:17:00.282Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:17:00.283Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T01:17:01.024Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-09T01:17:01.024Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T01:17:01.025Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-06-09T01:17:01.026Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-09T01:17:01.704Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-06-09T01:17:01.705Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'kitsunekeltimi'...
+[info] 
+[info] i  deploying firestore, functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2024-06-09T01:17:03.393Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test [none]
+[debug] [2024-06-09T01:17:03.394Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test [omitted]
+[debug] [2024-06-09T01:17:03.714Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test 200
+[debug] [2024-06-09T01:17:03.715Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test {}
+[info] +  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2024-06-09T01:17:03.717Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi [none]
+[debug] [2024-06-09T01:17:04.034Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi 200
+[debug] [2024-06-09T01:17:04.035Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi {"projectId":"kitsunekeltimi","projectNumber":"864341143366","displayName":"KitsuneKeltimi","name":"projects/kitsunekeltimi","resources":{"hostingSite":"kitsunekeltimi"},"state":"ACTIVE","etag":"1_71f15a01-50f0-4bc2-8e6a-024cc44797c3"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: preparing codebase javascript for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2024-06-09T01:17:04.043Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-06-09T01:17:04.043Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:17:04.045Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-06-09T01:17:04.046Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:17:04.047Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com [none]
+[debug] [2024-06-09T01:17:04.047Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:17:04.049Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com [none]
+[debug] [2024-06-09T01:17:04.049Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:17:04.936Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com 200
+[debug] [2024-06-09T01:17:04.937Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2024-06-09T01:17:04.939Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com 200
+[debug] [2024-06-09T01:17:04.939Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2024-06-09T01:17:04.948Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com 200
+[debug] [2024-06-09T01:17:04.949Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-06-09T01:17:05.011Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com 200
+[debug] [2024-06-09T01:17:05.011Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2024-06-09T01:17:05.012Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig [none]
+[debug] [2024-06-09T01:17:05.297Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig 200
+[debug] [2024-06-09T01:17:05.298Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig {"projectId":"kitsunekeltimi","storageBucket":"kitsunekeltimi.appspot.com"}
+[debug] [2024-06-09T01:17:05.300Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs [none]
+[debug] [2024-06-09T01:17:05.573Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs 200
+[debug] [2024-06-09T01:17:05.574Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs {}
+[debug] [2024-06-09T01:17:05.576Z] Validating nodejs source
+[debug] [2024-06-09T01:17:06.392Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "chatgpt": "^5.2.5",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.1",
+    "openai": "^4.49.1",
+    "twitter-api-v2": "^1.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-09T01:17:06.396Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2024-06-09T01:17:06.399Z] Found functions.yaml. Got spec: # functions.yaml
+
+# Specify the version (e.g., 2)
+version: 2
+
+# Define your Cloud Functions
+functions:
+  auth:
+    handler: auth
+    memory: 256MB
+    timeout: 10s
+
+  callback:
+    handler: callback
+    memory: 256MB
+    timeout: 10s
+
+  tweet:
+    handler: tweet
+    memory: 256MB
+    timeout: 10s
+
+# Explanation: We define three Cloud Functions: auth, callback, and tweet.
+# Each function specifies its handler (corresponding to the function name)
+# Adjust the memory and timeout values as needed for your specific use case.
+# You can add more functions or additional configuration options as required.
+
+[error] Error: Failed to parse build specification:
+[error] - FirebaseError Expect manifest yaml to specify a version number
+[debug] [2024-06-09T01:23:32.890Z] ----------------------------------------------------------------------
+[debug] [2024-06-09T01:23:32.892Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-06-09T01:23:32.892Z] CLI Version:   13.11.2
+[debug] [2024-06-09T01:23:32.892Z] Platform:      win32
+[debug] [2024-06-09T01:23:32.892Z] Node Version:  v18.20.3
+[debug] [2024-06-09T01:23:32.893Z] Time:          Sun Jun 09 2024 02:23:32 GMT+0100 (British Summer Time)
+[debug] [2024-06-09T01:23:32.893Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-09T01:23:32.959Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-09T01:23:32.960Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-09T01:23:32.961Z] [iam] checking project kitsunekeltimi for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
+[debug] [2024-06-09T01:23:32.963Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-09T01:23:32.963Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:23:32.964Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T01:23:33.896Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-09T01:23:33.896Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2024-06-09T01:23:33.897Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-06-09T01:23:33.898Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-09T01:23:34.695Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-06-09T01:23:34.697Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/kitsunekeltimi/serviceAccounts/kitsunekeltimi@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'kitsunekeltimi'...
+[info] 
+[info] i  deploying firestore, functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2024-06-09T01:23:36.425Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test [none]
+[debug] [2024-06-09T01:23:36.425Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test [omitted]
+[debug] [2024-06-09T01:23:37.245Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test 200
+[debug] [2024-06-09T01:23:37.246Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/kitsunekeltimi:test {}
+[info] +  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2024-06-09T01:23:37.248Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi [none]
+[debug] [2024-06-09T01:23:37.600Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi 200
+[debug] [2024-06-09T01:23:37.600Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi {"projectId":"kitsunekeltimi","projectNumber":"864341143366","displayName":"KitsuneKeltimi","name":"projects/kitsunekeltimi","resources":{"hostingSite":"kitsunekeltimi"},"state":"ACTIVE","etag":"1_71f15a01-50f0-4bc2-8e6a-024cc44797c3"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: preparing codebase javascript for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2024-06-09T01:23:37.607Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-06-09T01:23:37.607Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:23:37.610Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-06-09T01:23:37.611Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:23:37.612Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com [none]
+[debug] [2024-06-09T01:23:37.613Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:23:37.614Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com [none]
+[debug] [2024-06-09T01:23:37.614Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:23:38.574Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com 200
+[debug] [2024-06-09T01:23:38.574Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-06-09T01:23:38.576Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com 200
+[debug] [2024-06-09T01:23:38.576Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2024-06-09T01:23:38.578Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com 200
+[debug] [2024-06-09T01:23:38.578Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2024-06-09T01:23:38.579Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com 200
+[debug] [2024-06-09T01:23:38.579Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kitsunekeltimi/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2024-06-09T01:23:38.579Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig [none]
+[debug] [2024-06-09T01:23:38.879Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig 200
+[debug] [2024-06-09T01:23:38.880Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig {"projectId":"kitsunekeltimi","storageBucket":"kitsunekeltimi.appspot.com"}
+[debug] [2024-06-09T01:23:38.881Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs [none]
+[debug] [2024-06-09T01:23:39.201Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs 200
+[debug] [2024-06-09T01:23:39.202Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kitsunekeltimi/configs {}
+[debug] [2024-06-09T01:23:39.205Z] Validating nodejs source
+[debug] [2024-06-09T01:23:40.504Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "chatgpt": "^5.2.5",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.1",
+    "openai": "^4.49.1",
+    "twitter-api-v2": "^1.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-09T01:23:40.507Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2024-06-09T01:23:40.514Z] Found functions.yaml. Got spec: # functions.yaml
+
+# Specify the version (e.g., 2)
+version: 2.0
+
+# Define your Cloud Functions
+functions:
+  auth:
+    handler: auth
+    memory: 256MB
+    timeout: 10s
+
+  callback:
+    handler: callback
+    memory: 256MB
+    timeout: 10s
+
+  tweet:
+    handler: tweet
+    memory: 256MB
+    timeout: 10s
+
+# Explanation: We define three Cloud Functions: auth, callback, and tweet.
+# Each function specifies its handler (corresponding to the function name)
+# Adjust the memory and timeout values as needed for your specific use case.
+# You can add more functions or additional configuration options as required.
+
+[error] Error: Failed to parse build specification:
+[error] - FirebaseError Expect manifest yaml to specify a version number
+[debug] [2024-06-09T01:30:01.678Z] ----------------------------------------------------------------------
+[debug] [2024-06-09T01:30:01.680Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2024-06-09T01:30:01.680Z] CLI Version:   13.11.2
+[debug] [2024-06-09T01:30:01.680Z] Platform:      win32
+[debug] [2024-06-09T01:30:01.680Z] Node Version:  v18.20.3
+[debug] [2024-06-09T01:30:01.685Z] Time:          Sun Jun 09 2024 02:30:01 GMT+0100 (British Summer Time)
+[debug] [2024-06-09T01:30:01.685Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-09T01:30:01.779Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-09T01:30:01.779Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-09T01:30:01.779Z] [iam] checking project kitsunekeltimi for permissions ["firebase.projects.get"]
+[debug] [2024-06-09T01:30:01.780Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-09T01:30:01.781Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-09T01:30:01.781Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-09T01:30:02.514Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-09T01:30:02.514Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-09T01:30:02.515Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi [none]
+[debug] [2024-06-09T01:30:02.873Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi 200
+[debug] [2024-06-09T01:30:02.873Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi {"projectId":"kitsunekeltimi","projectNumber":"864341143366","displayName":"KitsuneKeltimi","name":"projects/kitsunekeltimi","resources":{"hostingSite":"kitsunekeltimi"},"state":"ACTIVE","etag":"1_71f15a01-50f0-4bc2-8e6a-024cc44797c3"}
+[info] 
+[info] === Serving from 'C:\Users\James\kitsune'...
+[info] 
+[debug] [2024-06-09T01:30:02.882Z] defaultcredentials: writing to file C:\Users\James\AppData\Roaming\firebase\jnurdenlmu_gmail_com_application_default_credentials.json
+[debug] [2024-06-09T01:30:02.884Z] Setting GAC to C:\Users\James\AppData\Roaming\firebase\jnurdenlmu_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\James\\AppData\\Roaming\\firebase\\jnurdenlmu_gmail_com_application_default_credentials.json"}}
+[debug] [2024-06-09T01:30:02.884Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig [none]
+[debug] [2024-06-09T01:30:03.208Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig 200
+[debug] [2024-06-09T01:30:03.208Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig {"projectId":"kitsunekeltimi","storageBucket":"kitsunekeltimi.appspot.com"}
+[info] i  functions: Watching "C:\Users\James\kitsune\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\James\\kitsune\\functions\" for Cloud Functions..."}}
+[debug] [2024-06-09T01:30:03.231Z] Validating nodejs source
+[debug] [2024-06-09T01:30:04.231Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "chatgpt": "^5.2.5",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.1",
+    "openai": "^4.49.1",
+    "twitter-api-v2": "^1.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-09T01:30:04.231Z] Building nodejs source
+[debug] [2024-06-09T01:30:04.231Z] Failed to find version of module node: reached end of search path C:\Users\James\kitsune\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-06-09T01:30:04.236Z] Found functions.yaml. Got spec: # functions.yaml
+
+# Specify the version (e.g., 2)
+version: 2.0
+
+# Define your Cloud Functions
+functions:
+  auth:
+    handler: auth
+    memory: 256MB
+    timeout: 10s
+
+  callback:
+    handler: callback
+    memory: 256MB
+    timeout: 10s
+
+  tweet:
+    handler: tweet
+    memory: 256MB
+    timeout: 10s
+
+# Explanation: We define three Cloud Functions: auth, callback, and tweet.
+# Each function specifies its handler (corresponding to the function name)
+# Adjust the memory and timeout values as needed for your specific use case.
+# You can add more functions or additional configuration options as required.
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to parse build specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to parse build specification"}}
+[info] i  functions: Watching "C:\Users\James\kitsune\javascript" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\James\\kitsune\\javascript\" for Cloud Functions..."}}
+[debug] [2024-06-09T01:30:04.249Z] Validating nodejs source
+[debug] [2024-06-09T01:30:05.060Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-09T01:30:05.060Z] Building nodejs source
+[debug] [2024-06-09T01:30:05.060Z] Failed to find version of module node: reached end of search path C:\Users\James\kitsune\javascript\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-06-09T01:30:05.062Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-06-09T01:30:05.067Z] Found firebase-functions binary at 'C:\Users\James\kitsune\javascript\node_modules\.bin\firebase-functions'
+[info] Serving at port 8833
+
+[debug] [2024-06-09T01:30:05.340Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2024-06-09T01:33:20.426Z] File C:\Users\James\kitsune\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\James\\kitsune\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-06-09T01:33:21.435Z] Validating nodejs source
+[debug] [2024-06-09T01:33:22.302Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "chatgpt": "^5.2.5",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.1",
+    "openai": "^4.49.1",
+    "twitter-api-v2": "^1.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-09T01:33:22.302Z] Building nodejs source
+[debug] [2024-06-09T01:33:22.303Z] Failed to find version of module node: reached end of search path C:\Users\James\kitsune\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-06-09T01:33:22.304Z] Found functions.yaml. Got spec: # functions.yaml
+
+# Specify the version (e.g., 2)
+version: 2.0
+
+# Define your Cloud Functions
+functions:
+  auth:
+    handler: auth
+    memory: 256MB
+    timeout: 10s
+
+  callback:
+    handler: callback
+    memory: 256MB
+    timeout: 10s
+
+  tweet:
+    handler: tweet
+    memory: 256MB
+    timeout: 10s
+
+# Explanation: We define three Cloud Functions: auth, callback, and tweet.
+# Each function specifies its handler (corresponding to the function name)
+# Adjust the memory and timeout values as needed for your specific use case.
+# You can add more functions or additional configuration options as required.
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to parse build specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to parse build specification"}}
+[debug] [2024-06-09T02:19:46.012Z] File C:\Users\James\kitsune\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\James\\kitsune\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-06-09T02:19:47.044Z] Validating nodejs source
+[debug] [2024-06-09T02:19:48.720Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "chatgpt": "^5.2.5",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.1",
+    "openai": "^4.49.1",
+    "twitter-api-v2": "^1.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-09T02:19:48.720Z] Building nodejs source
+[debug] [2024-06-09T02:19:48.720Z] Failed to find version of module node: reached end of search path C:\Users\James\kitsune\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-06-09T02:19:48.724Z] Found functions.yaml. Got spec: # functions.yaml
+
+# Specify the version (e.g., 2)
+version: 2.0
+
+# Define your Cloud Functions
+functions:
+  auth:
+    handler: auth
+    memory: 256MB
+    timeout: 10s
+
+  callback:
+    handler: callback
+    memory: 256MB
+    timeout: 10s
+
+  tweet:
+    handler: tweet
+    memory: 256MB
+    timeout: 10s
+
+# Explanation: We define three Cloud Functions: auth, callback, and tweet.
+# Each function specifies its handler (corresponding to the function name)
+# Adjust the memory and timeout values as needed for your specific use case.
+# You can add more functions or additional configuration options as required.
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to parse build specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to parse build specification"}}
+[debug] [2024-06-09T02:20:10.176Z] File C:\Users\James\kitsune\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\James\\kitsune\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-06-09T02:20:11.189Z] Validating nodejs source
+[debug] [2024-06-09T02:20:12.062Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "chatgpt": "^5.2.5",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.1",
+    "openai": "^4.49.1",
+    "twitter-api-v2": "^1.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-09T02:20:12.062Z] Building nodejs source
+[debug] [2024-06-09T02:20:12.062Z] Failed to find version of module node: reached end of search path C:\Users\James\kitsune\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-06-09T02:20:12.063Z] Found functions.yaml. Got spec: # functions.yaml
+
+# Specify the version (e.g., 2)
+version: 2.0
+
+# Define your Cloud Functions
+functions:
+  auth:
+    handler: auth
+    memory: 256MB
+    timeout: 10s
+
+  callback:
+    handler: callback
+    memory: 256MB
+    timeout: 10s
+
+  tweet:
+    handler: tweet
+    memory: 256MB
+    timeout: 10s
+
+# Explanation: We define three Cloud Functions: auth, callback, and tweet.
+# Each function specifies its handler (corresponding to the function name)
+# Adjust the memory and timeout values as needed for your specific use case.
+# You can add more functions or additional configuration options as required.
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to parse build specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to parse build specification"}}
+[debug] [2024-06-09T02:20:48.126Z] File C:\Users\James\kitsune\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\James\\kitsune\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-06-09T02:20:49.144Z] Validating nodejs source
+[debug] [2024-06-09T02:20:49.988Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "chatgpt": "^5.2.5",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.1",
+    "openai": "^4.49.1",
+    "twitter-api-v2": "^1.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-09T02:20:49.988Z] Building nodejs source
+[debug] [2024-06-09T02:20:49.988Z] Failed to find version of module node: reached end of search path C:\Users\James\kitsune\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-06-09T02:20:49.989Z] Found functions.yaml. Got spec: # functions.yaml
+
+# Specify the version (e.g., 2)
+version: 2.0
+
+# Define your Cloud Functions
+functions:
+  auth:
+    handler: auth
+    memory: 256MB
+    timeout: 10s
+
+  callback:
+    handler: callback
+    memory: 256MB
+    timeout: 10s
+
+  tweet:
+    handler: tweet
+    memory: 256MB
+    timeout: 10s
+
+# Explanation: We define three Cloud Functions: auth, callback, and tweet.
+# Each function specifies its handler (corresponding to the function name)
+# Adjust the memory and timeout values as needed for your specific use case.
+# You can add more functions or additional configuration options as required.
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to parse build specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to parse build specification"}}
+[debug] [2024-06-09T03:30:50.539Z] File C:\Users\James\kitsune\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\James\\kitsune\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-06-09T03:30:51.582Z] Validating nodejs source
+[debug] [2024-06-09T03:30:53.146Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "chatgpt": "^5.2.5",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.1",
+    "openai": "^4.49.1",
+    "twitter-api-v2": "^1.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-09T03:30:53.147Z] Building nodejs source
+[debug] [2024-06-09T03:30:53.147Z] Failed to find version of module node: reached end of search path C:\Users\James\kitsune\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-06-09T03:30:53.153Z] Found functions.yaml. Got spec: # functions.yaml
+
+# Specify the version (e.g., 2)
+version: 2.0
+
+# Define your Cloud Functions
+functions:
+  auth:
+    handler: auth
+    memory: 256MB
+    timeout: 10s
+
+  callback:
+    handler: callback
+    memory: 256MB
+    timeout: 10s
+
+  tweet:
+    handler: tweet
+    memory: 256MB
+    timeout: 10s
+
+# Explanation: We define three Cloud Functions: auth, callback, and tweet.
+# Each function specifies its handler (corresponding to the function name)
+# Adjust the memory and timeout values as needed for your specific use case.
+# You can add more functions or additional configuration options as required.
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to parse build specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to parse build specification"}}
+[debug] [2024-06-09T03:31:41.767Z] File C:\Users\James\kitsune\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\James\\kitsune\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-06-09T03:31:42.771Z] Validating nodejs source
+[debug] [2024-06-09T03:31:43.633Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "chatgpt": "^5.2.5",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.1",
+    "openai": "^4.49.1",
+    "twitter-api-v2": "^1.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-09T03:31:43.633Z] Building nodejs source
+[debug] [2024-06-09T03:31:43.634Z] Failed to find version of module node: reached end of search path C:\Users\James\kitsune\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-06-09T03:31:43.635Z] Found functions.yaml. Got spec: # functions.yaml
+
+# Specify the version (e.g., 2)
+version: 2.0
+
+# Define your Cloud Functions
+functions:
+  auth:
+    handler: auth
+    memory: 256MB
+    timeout: 10s
+
+  callback:
+    handler: callback
+    memory: 256MB
+    timeout: 10s
+
+  tweet:
+    handler: tweet
+    memory: 256MB
+    timeout: 10s
+
+# Explanation: We define three Cloud Functions: auth, callback, and tweet.
+# Each function specifies its handler (corresponding to the function name)
+# Adjust the memory and timeout values as needed for your specific use case.
+# You can add more functions or additional configuration options as required.
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to parse build specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to parse build specification"}}
+[debug] [2024-06-09T03:32:33.631Z] File C:\Users\James\kitsune\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\James\\kitsune\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-06-09T03:32:34.633Z] Validating nodejs source
+[debug] [2024-06-09T03:32:35.474Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "chatgpt": "^5.2.5",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.1",
+    "openai": "^4.49.1",
+    "twitter-api-v2": "^1.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-09T03:32:35.474Z] Building nodejs source
+[debug] [2024-06-09T03:32:35.474Z] Failed to find version of module node: reached end of search path C:\Users\James\kitsune\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-06-09T03:32:35.475Z] Found functions.yaml. Got spec: # functions.yaml
+
+# Specify the version (e.g., 2)
+version: 2.0
+
+# Define your Cloud Functions
+functions:
+  auth:
+    handler: auth
+    memory: 256MB
+    timeout: 10s
+
+  callback:
+    handler: callback
+    memory: 256MB
+    timeout: 10s
+
+  tweet:
+    handler: tweet
+    memory: 256MB
+    timeout: 10s
+
+# Explanation: We define three Cloud Functions: auth, callback, and tweet.
+# Each function specifies its handler (corresponding to the function name)
+# Adjust the memory and timeout values as needed for your specific use case.
+# You can add more functions or additional configuration options as required.
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to parse build specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to parse build specification"}}
+[debug] [2024-06-09T03:32:49.977Z] File C:\Users\James\kitsune\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\James\\kitsune\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-06-09T03:32:50.992Z] Validating nodejs source
+[debug] [2024-06-09T03:32:51.843Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "chatgpt": "^5.2.5",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.1",
+    "openai": "^4.49.1",
+    "twitter-api-v2": "^1.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-09T03:32:51.843Z] Building nodejs source
+[debug] [2024-06-09T03:32:51.843Z] Failed to find version of module node: reached end of search path C:\Users\James\kitsune\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-06-09T03:32:51.846Z] Found functions.yaml. Got spec: # functions.yaml
+
+# Specify the version (e.g., 2)
+version: 2.0
+
+# Define your Cloud Functions
+functions:
+  auth:
+    handler: auth
+    memory: 256MB
+    timeout: 10s
+
+  callback:
+    handler: callback
+    memory: 256MB
+    timeout: 10s
+
+  tweet:
+    handler: tweet
+    memory: 256MB
+    timeout: 10s
+
+# Explanation: We define three Cloud Functions: auth, callback, and tweet.
+# Each function specifies its handler (corresponding to the function name)
+# Adjust the memory and timeout values as needed for your specific use case.
+# You can add more functions or additional configuration options as required.
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to parse build specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to parse build specification"}}

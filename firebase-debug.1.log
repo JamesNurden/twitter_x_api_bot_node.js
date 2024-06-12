@@ -1,0 +1,72 @@
+[debug] [2024-06-08T02:01:15.227Z] ----------------------------------------------------------------------
+[debug] [2024-06-08T02:01:15.229Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\James\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2024-06-08T02:01:15.229Z] CLI Version:   13.11.1
+[debug] [2024-06-08T02:01:15.229Z] Platform:      win32
+[debug] [2024-06-08T02:01:15.229Z] Node Version:  v20.14.0
+[debug] [2024-06-08T02:01:15.229Z] Time:          Sat Jun 08 2024 03:01:15 GMT+0100 (British Summer Time)
+[debug] [2024-06-08T02:01:15.229Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-08T02:01:15.337Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-08T02:01:15.337Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-08T02:01:15.337Z] [iam] checking project kitsunekeltimi for permissions ["firebase.projects.get"]
+[debug] [2024-06-08T02:01:15.338Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-08T02:01:15.339Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-08T02:01:15.339Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-08T02:01:16.165Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-08T02:01:16.166Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-08T02:01:16.166Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi [none]
+[debug] [2024-06-08T02:01:16.541Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi 200
+[debug] [2024-06-08T02:01:16.542Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi {"projectId":"kitsunekeltimi","projectNumber":"864341143366","displayName":"KitsuneKeltimi","name":"projects/kitsunekeltimi","resources":{"hostingSite":"kitsunekeltimi"},"state":"ACTIVE","etag":"1_71f15a01-50f0-4bc2-8e6a-024cc44797c3"}
+[info] 
+[info] === Serving from 'C:\Users\James\kitsune'...
+[info] 
+[debug] [2024-06-08T02:01:16.551Z] defaultcredentials: writing to file C:\Users\James\AppData\Roaming\firebase\jnurdenlmu_gmail_com_application_default_credentials.json
+[debug] [2024-06-08T02:01:16.553Z] Setting GAC to C:\Users\James\AppData\Roaming\firebase\jnurdenlmu_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\James\\AppData\\Roaming\\firebase\\jnurdenlmu_gmail_com_application_default_credentials.json"}}
+[debug] [2024-06-08T02:01:16.554Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig [none]
+[debug] [2024-06-08T02:01:16.861Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig 200
+[debug] [2024-06-08T02:01:16.861Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig {"projectId":"kitsunekeltimi","storageBucket":"kitsunekeltimi.appspot.com"}
+[debug] [2024-06-08T02:01:16.875Z] Error: listen EADDRINUSE: address already in use ::1:5000
+    at Server.setupListenHandle [as _listen2] (node:net:1898:16)
+    at listenInCluster (node:net:1946:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (node:net:2116:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:111:8)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  functions: Watching "C:\Users\James\kitsune\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\James\\kitsune\\functions\" for Cloud Functions..."}}
+[debug] [2024-06-08T02:01:16.881Z] Validating nodejs source
+[debug] [2024-06-08T02:09:30.092Z] ----------------------------------------------------------------------
+[debug] [2024-06-08T02:09:30.093Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\James\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2024-06-08T02:09:30.094Z] CLI Version:   13.11.2
+[debug] [2024-06-08T02:09:30.094Z] Platform:      win32
+[debug] [2024-06-08T02:09:30.094Z] Node Version:  v20.14.0
+[debug] [2024-06-08T02:09:30.094Z] Time:          Sat Jun 08 2024 03:09:30 GMT+0100 (British Summer Time)
+[debug] [2024-06-08T02:09:30.094Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-08T02:09:30.201Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-08T02:09:30.201Z] > authorizing via signed-in user (jnurdenlmu@gmail.com)
+[debug] [2024-06-08T02:09:30.202Z] [iam] checking project kitsunekeltimi for permissions ["firebase.projects.get"]
+[debug] [2024-06-08T02:09:30.203Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions [none]
+[debug] [2024-06-08T02:09:30.203Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions x-goog-quota-user=projects/kitsunekeltimi
+[debug] [2024-06-08T02:09:30.203Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-08T02:09:30.546Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions 200
+[debug] [2024-06-08T02:09:30.546Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kitsunekeltimi:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-08T02:09:30.547Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi [none]
+[debug] [2024-06-08T02:09:30.953Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi 200
+[debug] [2024-06-08T02:09:30.953Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi {"projectId":"kitsunekeltimi","projectNumber":"864341143366","displayName":"KitsuneKeltimi","name":"projects/kitsunekeltimi","resources":{"hostingSite":"kitsunekeltimi"},"state":"ACTIVE","etag":"1_71f15a01-50f0-4bc2-8e6a-024cc44797c3"}
+[info] 
+[info] === Serving from 'C:\Users\James\kitsune'...
+[info] 
+[debug] [2024-06-08T02:09:30.957Z] defaultcredentials: writing to file C:\Users\James\AppData\Roaming\firebase\jnurdenlmu_gmail_com_application_default_credentials.json
+[debug] [2024-06-08T02:09:30.959Z] Setting GAC to C:\Users\James\AppData\Roaming\firebase\jnurdenlmu_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\James\\AppData\\Roaming\\firebase\\jnurdenlmu_gmail_com_application_default_credentials.json"}}
+[debug] [2024-06-08T02:09:30.960Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig [none]
+[debug] [2024-06-08T02:09:31.206Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig 200
+[debug] [2024-06-08T02:09:31.206Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kitsunekeltimi/adminSdkConfig {"projectId":"kitsunekeltimi","storageBucket":"kitsunekeltimi.appspot.com"}
+[debug] [2024-06-08T02:09:31.221Z] Error: listen EADDRINUSE: address already in use ::1:5000
+    at Server.setupListenHandle [as _listen2] (node:net:1898:16)
+    at listenInCluster (node:net:1946:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (node:net:2116:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:111:8)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  functions: Watching "C:\Users\James\kitsune\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\James\\kitsune\\functions\" for Cloud Functions..."}}
+[debug] [2024-06-08T02:09:31.227Z] Validating nodejs source
