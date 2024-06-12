@@ -5,17 +5,11 @@ This repository contains a Node.js application for a Twitter bot that leverages 
 Table of Contents
 
 Features
-
 Installation
-
 Usage
-
 Configuration
-
 Contributing
-
 License
-
 Features
 
 Automated Tweeting: The bot tweets regularly at scheduled intervals.
